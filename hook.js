@@ -36,7 +36,6 @@ export const useColors = () => {
             const newColor = {id: generate(),color};
             setColors([newColor, ...colors]);
         }else{
-
             Alert.alert("color already available");
         }
     }else{
