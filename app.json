@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "ColorCatalog",
-    "slug": "ColorCatalog",
+    "name": "ColorCatalogKSS",
+    "description": "List Color App",
+    "slug": "ColorCatalogKSS",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.fikrizufri.ColorCatalogKSS"
     },
     "web": {
       "favicon": "./assets/favicon.png"
