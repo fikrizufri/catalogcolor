@@ -29,14 +29,19 @@ export const useColors = () => {
     });
     
     if (data.length) {
-         let ColorList = colors.filter(function(item){
-            return item.color == color;
-        });
-        if (!ColorList.length){
+        if (colors.length) {
+            let ColorList = colors.filter(function(item){
+                return item.color == color;
+            });
+            if (!ColorList.length){
+                const newColor = {id: generate(),color};
+                setColors([newColor, ...colors]);
+            }else{
+                Alert.alert("Color already available in list");
+            }
+        }else{
             const newColor = {id: generate(),color};
             setColors([newColor, ...colors]);
-        }else{
-            Alert.alert("color already available");
         }
     }else{
         Alert.alert("Color not available");
